@@ -1,2 +1,1 @@
-console.log('Test');
-
+import "./style.scss";
