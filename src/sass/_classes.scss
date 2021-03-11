@@ -1,0 +1,76 @@
+.classes {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url(../img/classes-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -5;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    &--wrapper {
+  
+    }
+  }
+}
+
+.cards {
+  &__item {
+    width: 17%;
+    margin: 0 2rem;
+    transition: transform .2s;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.card {
+  &__img{
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    font-family: $font-headings;
+    font-weight: 500;
+    color: var(--color-primary-dark-1);
+    margin-bottom: 1.6rem;
+  }
+
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline;
+    margin-right: 1.2rem;
+    fill: var(--color-primary-dark-1);
+  }
+
+  &__text--information {
+    font-size: 1.3rem;
+    color: #999999;
+  }
+
+  &__level {
+    margin-bottom: 2.5rem;
+  }
+}

@@ -1,20 +1,10 @@
 .about {
   display: flex;
+  margin-bottom: 12rem;
 
   &__video {
     width: 33%;
-    margin: 10 auto 0 37.5rem;
-    margin-left: 37.5rem;
-    margin-top: 10rem;
-    margin-right: auto;
-  }
-
-  &__heading {
-    font-family: $font-headings;
-    font-size: 4.8rem;
-    line-height: 1.75;
-    font-weight: 300;
-    color: var(--color-primary-light);
+    margin: 10rem auto 0 37.5rem;
   }
 
   &__reasons {
@@ -33,10 +23,16 @@
       left: 0;
     }
   }
+
+  &__text {
+    margin-bottom: 5rem;
+  }
 }
 
 .reasons__item {
-  width: 37.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .reasons__item:not(:first-child) {
@@ -50,4 +46,22 @@
   font-weight: 500;
   color: #000000;
   margin-bottom: 22px;
+}
+
+.reasons__icon {
+  width: 7rem;
+  height: 7rem;
+  fill: var(--color-primary-dark-1);
+  margin-right: 2.5rem;
+  padding: 1.7rem 1.6rem;
+  border: 2px solid var(--color-primary-dark-1);
+  border-radius: 50%;
+}
+
+.item__box {
+  width: 37.2rem;
+}
+
+.video {
+  width: 100%;
 }

@@ -1,0 +1,11 @@
+.center {
+  text-align: center;
+}
+
+.card--flex {
+  display: flex;
+
+  &:not(.card__level) {
+    margin-bottom: 1.7rem;
+  }
+}
