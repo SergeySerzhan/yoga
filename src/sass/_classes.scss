@@ -1,5 +1,6 @@
 .classes {
   position: relative;
+  box-shadow: 0 2px 2px rgba(#000000, 0.2);
 
   &::before {
     content: "";
@@ -26,25 +27,25 @@
     align-items: flex-start;
 
     &--wrapper {
-  
+      width: 150rem;
+      margin: 0 auto;
+      overflow: hidden;
     }
   }
 }
 
 .cards {
   &__item {
-    width: 17%;
+    width: 32.6rem;
     margin: 0 2rem;
-    transition: transform .2s;
-    
-    &:hover {
-      transform: scale(1.05);
-    }
+    transition: transform 0.2s;
+    flex-shrink: 0;
+    transform: translateX(225%);
   }
 }
 
 .card {
-  &__img{
+  &__img {
     width: 100%;
     margin-bottom: 3rem;
   }
@@ -72,5 +73,33 @@
 
   &__level {
     margin-bottom: 2.5rem;
+  }
+}
+
+.slider__btn {
+  font-size: 2.5rem;
+  border: none;
+  color: var(--color-primary-dark-1);
+  cursor: pointer;
+  background-color: transparent;
+  transition: transform 0.2s, color 0.2s;
+  outline: none;
+
+  &:hover,
+  &:active {
+    color: var(--color-primary-dark-2);
+    transform: scale(1.05);
+  }
+
+  &--left {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+
+  &--right {
+    position: absolute;
+    top: 40%;
+    right: 10%;
   }
 }
