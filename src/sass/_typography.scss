@@ -6,4 +6,12 @@
     font-weight: 300;
     color: var(--color-primary-light);
   }
+
+  &--tertiary {
+    font-family: $font-headings;
+    font-size: 3.2rem;
+    line-height: 2.25;
+    font-weight: 300;
+    text-align: center;
+  }
 }

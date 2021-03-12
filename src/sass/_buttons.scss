@@ -1,0 +1,23 @@
+.btn {
+  &__action:link,
+  &__action:visited {
+    border-radius: 2rem;
+    background-color: var(--color-primary-dark-2);
+    color: #ffffff;
+    text-align: center;
+    font-family: $font-headings;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding: 1.2rem 0;
+    transition: transform .4s;
+  }
+
+  &__action:hover {
+    transform: scale(1.05);
+  }
+
+  &__action:active {
+    transform: translateY(2px);
+  }
+}

@@ -30,6 +30,7 @@
       width: 150rem;
       margin: 0 auto;
       overflow: hidden;
+      padding-bottom: 12rem;
     }
   }
 }
@@ -90,6 +91,7 @@
     color: var(--color-primary-dark-2);
     transform: scale(1.05);
   }
+  
 
   &--left {
     position: absolute;
@@ -102,4 +104,12 @@
     top: 40%;
     right: 10%;
   }
+}
+
+.endleft {
+  animation: endLeft .5s ease-in-out;
+}
+
+.endright {
+  animation: endRight .5s ease-in-out;
 }
