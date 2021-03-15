@@ -1,0 +1,30 @@
+.series {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__description {
+    width: 26%;
+    margin-right: 12rem;
+  }
+
+  &__heading {
+    color: var(--color-primary-dark-1);
+  }
+
+  &__text {
+    font-size: 2.1rem;
+    line-height: 2.25;
+    color: #8ea2dc;
+    margin-bottom: 4.5rem;
+  }
+
+  &__btn {
+    width: 21rem;
+    display: block;
+  }
+
+  &__image {
+    transform: translateY(-7rem);
+  }
+}
