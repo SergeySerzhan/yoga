@@ -1,16 +1,22 @@
 .about {
-  display: flex;
-  margin-bottom: 12rem;
+ 
+  &__wrapper {
+    display: flex;
+    margin: 10rem 0 12rem 0;
+  }
 
   &__video {
-    width: 33%;
-    margin: 10rem auto 0 37.5rem;
+    width: 50%;
+    margin-right: 13rem;
   }
 
   &__reasons {
-    padding-right: 37.7rem;
-    transform: translateY(-5rem);
+    transform: translateY(-18rem);
     position: relative;
+
+    // @media only screen and (max-width: $bp-largest) {
+    //   transform: translateY(-13rem);
+    // }
 
     &::before {
       content: "";
@@ -42,7 +48,6 @@
 .item__heading {
   font-family: $font-headings;
   font-size: 1.8rem;
-  line-height: 1.125;
   font-weight: 500;
   color: #000000;
   margin-bottom: 22px;

@@ -2,11 +2,32 @@
   background-color: #181818;
 }
 
+.info__wrapper {
+  background-color: #222222;
+}
+
 .footer {
   &__subscribe {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    padding-top: 6rem;
+    padding-bottom: 4.5rem;
+    justify-content: space-between;
+   
+  }
+
+  &__text {
+    font-size: 1.3rem;
+    color:  var(--color-text-footer);
+  }
+
+  &__contact {
+    width: 17%;
   }
 }
 
@@ -28,11 +49,10 @@
   }
 
   &__text {
-    font-size: 1.3rem;
     font-style: italic;
-    color: #bbbbbb;
     padding-bottom: 3.2rem;
   }
+  
 }
 
 .form__btn {
@@ -73,4 +93,52 @@
   outline: none;
   padding-left: 2rem;
   transform: translateX(3.5rem);
+}
+
+.contact {
+  &__adress {
+    line-height: 1.8;
+  }
+
+  &__email {
+    line-height: 2.75;
+  }
+
+  &__links {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.link__icons {
+  width: 4rem;
+  height: 4rem;
+}
+
+.item--link {
+  padding-bottom: 2px;
+  transition: color .3s,  border-bottom .3s;
+
+  &:hover {
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+  }
+}
+
+.open {
+  &__box{
+    display: flex;
+  }
+  
+  &__symbol {
+    margin: 0 5rem;
+  }
+}
+
+#map {
+  width: 270px;
+  height: 170px;
+  border-radius: 10px;
 }

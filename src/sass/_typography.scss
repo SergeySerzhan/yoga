@@ -2,7 +2,6 @@
   &--secondary {
     font-family: $font-headings;
     font-size: 4.8rem;
-    line-height: 1.75;
     font-weight: 300;
     color: var(--color-primary-light);
   }
@@ -10,8 +9,15 @@
   &--tertiary {
     font-family: $font-headings;
     font-size: 3.2rem;
-    line-height: 2.25;
     font-weight: 300;
     text-align: center;
   }
+}
+
+.footer__heading {
+  font-family: $font-headings;
+  line-height: 3;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.4rem;
 }

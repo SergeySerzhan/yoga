@@ -17,7 +17,7 @@
   &__text {
     color: #ffffff;
     text-align: center;
-    width: 43%;
+    width: 46%;
     margin: 0 auto;
     margin-bottom: 6rem;
   }
@@ -61,8 +61,6 @@
 
   &__instructors {
     display: grid;
-    margin: 0 auto;
-    width: 60%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 6rem;
