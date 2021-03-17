@@ -18,12 +18,11 @@
     padding-top: 6rem;
     padding-bottom: 4.5rem;
     justify-content: space-between;
-   
   }
 
   &__text {
     font-size: 1.3rem;
-    color:  var(--color-text-footer);
+    color: var(--color-text-footer);
   }
 
   &__contact {
@@ -52,36 +51,34 @@
     font-style: italic;
     padding-bottom: 3.2rem;
   }
-  
 }
 
 .form__btn {
-    border-radius: 2rem;
-    background-color: var(--color-primary-dark-2);
-    color: #ffffff;
-    text-align: center;
-    font-family: $font-headings;
-    font-size: 1.2rem;
-    line-height: 1.2;
-    text-transform: uppercase;
-    padding: 1.2rem 0;
-    transition: transform .4s;
-    outline: none;
-    width: 14rem;
-    border: none;
-    cursor: pointer;
-    height: 5rem;
-    z-index: 10;
-    transform: translateX(-3.5rem);
-    
+  border-radius: 2rem;
+  background-color: var(--color-primary-dark-2);
+  color: #ffffff;
+  text-align: center;
+  font-family: $font-headings;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 1.2rem 0;
+  transition: transform 0.4s;
+  outline: none;
+  width: 14rem;
+  border: none;
+  cursor: pointer;
+  height: 5rem;
+  z-index: 10;
+  transform: translateX(-3.5rem);
 
-    &:hover {
-      transform: translateX(-3.5rem) scale(1.05);
-    }
+  &:hover {
+    transform: translateX(-3.5rem) scale(1.05);
+  }
 
-    &:active {
-      transform: translateX(-3.5rem) translateY(2px);
-    }
+  &:active {
+    transform: translateX(-3.5rem) translateY(2px);
+  }
 }
 
 .form__input {
@@ -93,6 +90,7 @@
   outline: none;
   padding-left: 2rem;
   transform: translateX(3.5rem);
+  color: var(--color-text-footer);
 }
 
 .contact {
@@ -119,7 +117,7 @@
 
 .item--link {
   padding-bottom: 2px;
-  transition: color .3s,  border-bottom .3s;
+  transition: color 0.3s, border-bottom 0.3s;
 
   &:hover {
     border-bottom: 1px solid #ffffff;
@@ -128,10 +126,10 @@
 }
 
 .open {
-  &__box{
+  &__box {
     display: flex;
   }
-  
+
   &__symbol {
     margin: 0 5rem;
   }

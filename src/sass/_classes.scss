@@ -2,6 +2,15 @@
   position: relative;
   box-shadow: 0 2px 2px rgba(#000000, 0.2);
 
+  &__flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__heading {
+    margin-bottom: 8rem;
+  }
+
   &::before {
     content: "";
     background-image: url(../img/classes-back.jpg);
@@ -22,11 +31,16 @@
   }
 
   &__cards {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      overflow: hidden;
-      padding-bottom: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    padding-bottom: 12rem;
+    max-width: 1170px;
+
+    @media screen and (max-width: 84.375em) {
+      max-width: 960px;
+    }
   }
 }
 
@@ -82,31 +96,36 @@
   background-color: transparent;
   transition: transform 0.2s, color 0.2s;
   outline: none;
+  align-self: flex-start;
+  padding-top: 8rem;
 
   &:hover,
   &:active {
     color: var(--color-primary-dark-2);
     transform: scale(1.05);
   }
-  
 
   &--left {
-    position: absolute;
-    top: 40%;
-    left: 10%;
+    margin-right: 4rem;
+
+    // @media screen and (max-width: 84.375em) {
+    //   margin-right: 2rem;
+    // }
   }
 
   &--right {
-    position: absolute;
-    top: 40%;
-    right: 10%;
+    margin-left: 4rem;
+
+    // @media screen and (max-width: 84.375em) {
+    //   margin-left: 2rem;
+    // }
   }
 }
 
 .endleft {
-  animation: endLeft .5s ease-in-out;
+  animation: endLeft 0.5s ease-in-out;
 }
 
 .endright {
-  animation: endRight .5s ease-in-out;
+  animation: endRight 0.5s ease-in-out;
 }

@@ -2,10 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(to right bottom, #f8f7fc, #f0f0f0);
+  margin-bottom: 6rem;
 
   &__description {
     width: 26%;
     margin-right: 12rem;
+
+    @media screen and (max-width: 84.375em) {
+      width: 36%;
+      margin-right: 6rem;
+    }
   }
 
   &__heading {
