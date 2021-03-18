@@ -10,34 +10,20 @@
     right: 0;
     bottom: 0;
     left: 0;
-    // transform: translateY(-18rem);
   }
 
   &__wrapper {
     display: flex;
     margin: 10rem 0 12rem 0;
-
-    @media screen and (max-width: 75em) {
-      margin: 10rem 0 2rem 0;
-    }
   }
 
   &__video {
     width: 50%;
     margin-right: 13rem;
-
-    @media screen and (max-width: 84.375em) {
-      margin-right: 7rem;
-    }
   }
 
   &__reasons {
-    transform: translateY(-15rem);
     position: relative;
-
-    // @media only screen and (max-width: $bp-largest) {
-    //   transform: translateY(-13rem);
-    // }
   }
 
   &__text {

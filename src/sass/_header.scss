@@ -1,11 +1,12 @@
 .header {
-  background-image: url(../img/header-back/header-back.png);
-  height: 98rem;
+  background-image: linear-gradient(to right bottom, rgba(#d7eafd, 0.9), rgba(#ffffff, 0.9)), url(../img/header-back/alex-shaw-d_hGHSLAWxc-unsplash.jpg);
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 
-  // position: relative;
+
   &__menu {
     margin: 0 auto;
     padding-top: 3.3rem;
@@ -38,7 +39,15 @@
     color: var(--color-primary-dark-2);
     line-height: 10rem;
     width: 40rem;
-    margin: 21rem 0 0 auto;
+    margin-left: auto;
+    transform: translateY(-50%);
+
+    &--wrapper {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 100%;
+    }
   }
 }
 
