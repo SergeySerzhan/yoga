@@ -25,3 +25,13 @@
     transform: translateX(-225%);
   }
 }
+
+@keyframes navIn {
+  0% {
+    transform: translate(-218%, -50%);
+  }
+
+  100% {
+    transform: translate(70%, -50%);
+  }
+}

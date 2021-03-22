@@ -48,3 +48,29 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(mymap);
 
 L.marker([51.505, -0.09]).addTo(mymap);
+
+// BTN-HAMBURGER HEADER 
+const btnHamburger = document.querySelector('.nav__btn');
+const backCircle = document.querySelector('.background--circle');
+const body=document.querySelector('body');
+const nav=document.querySelector('.header__nav');
+
+console.log(body);
+
+const toggleBack=function() {
+  body.classList.toggle('body--active');
+  btnHamburger.classList.toggle('nav__btn--active');
+  nav.classList.toggle('header__nav--active');
+
+  const backIsDeactive=backCircle.classList.contains('btn--deactive');
+
+  if(backIsDeactive) {
+    backCircle.classList.add('btn--active');
+    backCircle.classList.remove('btn--deactive');
+  } else {
+    backCircle.classList.remove('btn--active');
+    backCircle.classList.add('btn--deactive');
+  }
+}
+
+btnHamburger.addEventListener('click', toggleBack);
