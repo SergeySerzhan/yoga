@@ -14,9 +14,11 @@
 
   &__wrapper {
     display: flex;
+    justify-content: space-between;
     margin: 10rem 0 12rem 0;
     
     @media screen and (max-width: 50em) {
+      margin-top: 4rem;
       flex-direction: column;
       align-items: center;
     }
@@ -24,21 +26,24 @@
 
   &__video {
     width: 50%;
-    margin-right: 13rem;
 
     @media screen and (max-width: 62.5em) {
-      margin-right: 5rem;
     }
 
     @media screen and (max-width: 50em) {
-      width: 70%;
-      margin-right: 0;
+      width: 90%;
+      // margin-right: 0;
       margin-bottom: 5rem;
     }
   }
 
   &__reasons {
+    width: 45%;
     position: relative;
+
+    @media screen and (max-width: 50em) {
+      width: 90%;
+    }
   }
 
   &__text {
@@ -54,6 +59,12 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 3rem;
   }
+
+  @media screen and (max-width: 31.25em) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+  }
 }
 
 .reasons__item {
@@ -64,6 +75,10 @@
 
 .reasons__item:not(:first-child) {
   margin-top: 5.8rem;
+
+  @media screen and (max-width: 50em) {
+    margin-top: 0;
+  }
 }
 
 .item__heading {
@@ -75,17 +90,22 @@
 }
 
 .reasons__icon {
-  width: 7rem;
-  height: 7rem;
+  width: 3.6rem;
+  height: 3.8rem;
   fill: var(--color-primary-dark-1);
-  margin-right: 2.5rem;
-  padding: 1.7rem 1.6rem;
-  border: 2px solid var(--color-primary-dark-1);
-  border-radius: 50%;
+
+  @media screen and (max-width: 31.25em) {
+    width: 2.7rem;
+    height: 2.85rem;
+  }
+  // margin-right: 2.5rem;
+  // padding: 1.7rem 1.6rem;
+  // border: 2px solid var(--color-primary-dark-1);
+  // border-radius: 50%;
 }
 
 .item__box {
-  width: 37.2rem;
+  // width: 37.2rem;
 }
 
 .video {
@@ -94,9 +114,34 @@
 
   @media screen and (max-width: 50em) {
     height: 240px;
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 25em) {
+    height: 152px;
+    width: 85%;
   }
 
   &__heading {
     margin-bottom: 3rem;
+  }
+}
+
+.icon__container {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary-dark-1);
+  margin-right: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  @media screen and (max-width: 31.25em) {
+    width: 5.25rem;
+    height: 5.25rem;
   }
 }
